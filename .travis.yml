@@ -6,12 +6,6 @@ node_js:
 cache:
   directories:
   - node_modules
-matrix:
-  include:
-  - script:
-    - npm test
-    - bash <(curl -s https://codecov.io/bash)
-  - script: bash ./surge_deploy.sh
 deploy:
   provider: heroku
   api_key:
