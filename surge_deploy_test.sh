@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 npm i -g surge
 # Actual building and setup of current push or PR.
 npm install
@@ -10,5 +11,5 @@ export SURGE_LOGIN=fossasiasusichat@example.com
 # Token of a dummy account.
 export SURGE_TOKEN=a34fd7119aacd204150edd6a8e29903d
 
-export DEPLOY_DOMAIN=https://kumu-fossasia-susi-web-chat.surge.sh
+export DEPLOY_DOMAIN=https://pr-1-fossasia-susi-web-chat.surge.sh
 surge --project ./build --domain $DEPLOY_DOMAIN;
