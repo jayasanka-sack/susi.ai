@@ -125,6 +125,7 @@
     "test": "npm run lint && react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
+    "heroku-postbuild": "npm run build",
     "deploy": "surge"
   },
   "lint-staged": {
