@@ -12,7 +12,6 @@ matrix:
     - npm test
     - bash <(curl -s https://codecov.io/bash)
   - script: bash ./surge_deploy.sh
-  - script: bash ./deploy.sh
 deploy:
   provider: heroku
   api_key:
