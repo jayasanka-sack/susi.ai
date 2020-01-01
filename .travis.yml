@@ -1,23 +1,22 @@
 sudo: required
 dist: trusty
 language: node_js
-
 node_js:
-  - 12
-
+- 12
 cache:
   directories:
-    - node_modules
-
+  - node_modules
 matrix:
   include:
-    # Run npm tests and get code coverage matrix
-    - script:
-      - npm test
-      - bash <(curl -s https://codecov.io/bash)
-
-    # Deploy PR to surge
-    - script: bash ./surge_deploy.sh
-
-    # Deploy on non-prs
-    - script: bash ./deploy.sh
+  - script:
+    - npm test
+    - bash <(curl -s https://codecov.io/bash)
+  - script: bash ./surge_deploy.sh
+  - script: bash ./deploy.sh
+deploy:
+  provider: heroku
+  api_key:
+    secure: QdpAP6QjGEBfatrl1BHTKY1cHkktweP2lGy+FPxQTvPD3RzOpONOPLfzui12qhqe9L9Rj01pTeRyX/VMIqVLWx2QcEaUe9mzdHakOCk1pWBlLihj9IVC4ISeIEP+0MRNijtImIHab0YqmBYs7zNXF/URUgXFNF4zDoLeqUDDjVNdQXHTwYb/BZ2dmlhaHHQp8fmD7gVrcYf6u2YnqtNUP9X0AM+mt9QivyRAuU2KScXgxyjJf8LBhmTQHv19rC5H5OAgyOjJEduZFC5Q3xgEyANwwzrS2BHCT0hDXq0ch4l9fR1RMeLJy+7o5gNPyVRWHenBY/Wb+THDcufAvW8+d6cDF9+K1IGkFqTgSmZG3qJmr2PZBJFs+Uhz2TMdrOJfHGdYNhskZKgQklTK1TKV9fjSRm4WN4YTR2wKYho3jFUeAXut8uYS8WXsc4SP+aK4jIkeZDGF/zeJw7lF/ckw/HWc5K91Ji/1XfV4OaXIYGWkTHVX3US30DmtMpX/JALkMBFfSv0+oWuDXxzpsmAGQg8H6AzkjIpkiAYpyzJOen+b5r5xIrViydnu4RyWTY3TBGIIMT7WKFfwoSnlPmdTqHpL5DtKrjJZfPth4Skim8mtLlgpU69jEm7UW5s3xtdrvgjbLLB8YPRsl12ilcDKclvtLVb/nmrzSBuHyJDedxo=
+  app: susi.ai
+  on:
+    repo: jayasanka-sack/susi.ai
