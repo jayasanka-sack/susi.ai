@@ -13,15 +13,14 @@ cache:
 #    - bash <(curl -s https://codecov.io/bash)
 #  - script: bash ./surge_deploy.sh
 #  - script: bash ./deploy.sh
-before_install:
-  - npm install -g npm
-script:
-  - npm install
-  - npm run build
+#before_install:
+#  - npm install -g npm
+#script:
+#  - npm install
 deploy:
   provider: heroku
   api_key:
-    secure: QdpAP6QjGEBfatrl1BHTKY1cHkktweP2lGy+FPxQTvPD3RzOpONOPLfzui12qhqe9L9Rj01pTeRyX/VMIqVLWx2QcEaUe9mzdHakOCk1pWBlLihj9IVC4ISeIEP+0MRNijtImIHab0YqmBYs7zNXF/URUgXFNF4zDoLeqUDDjVNdQXHTwYb/BZ2dmlhaHHQp8fmD7gVrcYf6u2YnqtNUP9X0AM+mt9QivyRAuU2KScXgxyjJf8LBhmTQHv19rC5H5OAgyOjJEduZFC5Q3xgEyANwwzrS2BHCT0hDXq0ch4l9fR1RMeLJy+7o5gNPyVRWHenBY/Wb+THDcufAvW8+d6cDF9+K1IGkFqTgSmZG3qJmr2PZBJFs+Uhz2TMdrOJfHGdYNhskZKgQklTK1TKV9fjSRm4WN4YTR2wKYho3jFUeAXut8uYS8WXsc4SP+aK4jIkeZDGF/zeJw7lF/ckw/HWc5K91Ji/1XfV4OaXIYGWkTHVX3US30DmtMpX/JALkMBFfSv0+oWuDXxzpsmAGQg8H6AzkjIpkiAYpyzJOen+b5r5xIrViydnu4RyWTY3TBGIIMT7WKFfwoSnlPmdTqHpL5DtKrjJZfPth4Skim8mtLlgpU69jEm7UW5s3xtdrvgjbLLB8YPRsl12ilcDKclvtLVb/nmrzSBuHyJDedxo=
+    secure: PFudHkB9SkNZQ+qJkgx0xMh0g6xemdN0ZLne5BeABfUfu+8swDU5TxNU1xbcs6IWDKassmPmnJc5fiKGp8sCRukdLyQi3ap/khMM/+thKuDu4EVEnJCBGpSwaCTP+r2zNRuwvlswcAyj2WyeDggkW3HHIAPYhz9WBuciERojySVTBRAoEVwRzjxizV2k9t7UCVHpdASF+yR+oVYLYqnPi8wToIGmtVhWIXMIwE/hU92fgQbHkWzGKdYLba/P6wmsVyrGxJVrVBlLjxMPF+KIc8z9uML2p97+u9qqGW65nM3LwYl1otXbDeQBHtA5TPB9x+LmksifRvJgfKxj46gcCkwC5AaK/vszni1eCaHrfEY30TxD7/dDEvstsdRpO6aNkIyk7Y2M3N8rgx+PH17ZWKgmtfOjipck3dEEHE+XXBGRCdCZIgVpbfM39mNjtq+6NxnQMn2+z/uZAz2+yLRGm/MA9Gyu/3tCgS5yaLpuHiuD9fn4brk79oYUHFgyUGdvw3/db1Gv0+9tz3mdkIa9xqIKfiJiA4U0xVpv8VfWdMZ1xeQCr6KHDGuiwnOqOxwiqlrwQUq6g8ynVZ5MNv9hMVlXIfCd/1YyQBlRW1aubcmu+X72o+MJQuX2Y4jbH2Xrs+hQsYVnz/wQTXD1hscagwPSDcQg6rhGyFBz/zl8g40=
   app: susi-build-her
   on:
     repo: jayasanka-sack/susi.ai
