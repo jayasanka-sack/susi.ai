@@ -17,6 +17,6 @@ deploy:
   provider: heroku
   api_key:
     secure: QdpAP6QjGEBfatrl1BHTKY1cHkktweP2lGy+FPxQTvPD3RzOpONOPLfzui12qhqe9L9Rj01pTeRyX/VMIqVLWx2QcEaUe9mzdHakOCk1pWBlLihj9IVC4ISeIEP+0MRNijtImIHab0YqmBYs7zNXF/URUgXFNF4zDoLeqUDDjVNdQXHTwYb/BZ2dmlhaHHQp8fmD7gVrcYf6u2YnqtNUP9X0AM+mt9QivyRAuU2KScXgxyjJf8LBhmTQHv19rC5H5OAgyOjJEduZFC5Q3xgEyANwwzrS2BHCT0hDXq0ch4l9fR1RMeLJy+7o5gNPyVRWHenBY/Wb+THDcufAvW8+d6cDF9+K1IGkFqTgSmZG3qJmr2PZBJFs+Uhz2TMdrOJfHGdYNhskZKgQklTK1TKV9fjSRm4WN4YTR2wKYho3jFUeAXut8uYS8WXsc4SP+aK4jIkeZDGF/zeJw7lF/ckw/HWc5K91Ji/1XfV4OaXIYGWkTHVX3US30DmtMpX/JALkMBFfSv0+oWuDXxzpsmAGQg8H6AzkjIpkiAYpyzJOen+b5r5xIrViydnu4RyWTY3TBGIIMT7WKFfwoSnlPmdTqHpL5DtKrjJZfPth4Skim8mtLlgpU69jEm7UW5s3xtdrvgjbLLB8YPRsl12ilcDKclvtLVb/nmrzSBuHyJDedxo=
-  app: susi.ai
+  app: susi-build-her
   on:
     repo: jayasanka-sack/susi.ai
